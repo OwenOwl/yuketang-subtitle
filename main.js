@@ -5,6 +5,8 @@
 // @match        https://tsinghua.yuketang.cn
 // @match        https://tsinghua.yuketang.cn/*
 // @grant        GM_xmlhttpRequest
+// @updateURL    https://raw.githubusercontent.com/OwenOwl/yuketang-subtitle/master/main.js
+// @downloadURL  https://raw.githubusercontent.com/OwenOwl/yuketang-subtitle/master/main.js
 // ==/UserScript==
 
 (function() {
