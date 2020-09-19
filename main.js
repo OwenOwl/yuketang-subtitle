@@ -21,16 +21,15 @@
                     var r = JSON.parse(response.responseText);
                     var s = "";
                     for (var i in r.text) {
-                        s = s + r.text[i] + '\\n';
+                        s = s + r.text[i] + '\n';
                     }
-                    s = s.replace(/[\r\n]/g,"");
-                    if (document.getElementsByClassName('title-fl').length != 0) {
-                        var f = document.getElementsByClassName('title-fl')[0];
-                        f.innerHTML += `<button onclick='prompt("", "`+s+`")'>下载字幕</button>`;
+                    if (document.getElementsByClassName('description').length != 0) {
+                        var g = document.getElementsByClassName('description')[0];
+                        g.innerHTML += `<textarea style="width: 100%; height: 200px; margin: 0; padding: 0;">` + s + `</textarea>`;
                         clearInterval(interval);
                     }
                 }
             } );
         }
-    },1000);
+    },2000);
 })();
